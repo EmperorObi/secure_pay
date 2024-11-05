@@ -17,7 +17,7 @@
         }
         100% {
             opacity: 1;
-            transform: translateX(-140px) translateY(20%);
+            transform: translateX(-115px) translateY(20%);
         }
     }
 
@@ -28,6 +28,6 @@
         }
         100% {
             opacity: 1;
-            transform: translateX(140px) translateY(20%);
+            transform: translateX(115px) translateY(20%);
         }
     }

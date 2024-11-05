@@ -1,6 +1,9 @@
 body{
         background-color: var(--pry-clr-variant);
 }
+.hero-page{
+    margin-top: 9rem;
+}
 .download-section {
         position: relative;
         display: flex;
@@ -21,7 +24,7 @@ body{
 .download-section h4{
     display: flex;
     border: .6px solid var(--gray);
-    color: var(--gray);
+    /* color: var(--gray); */
     background-color: var(--pry-clr);
     padding: 0.6rem;
     text-align: center;
@@ -41,24 +44,26 @@ body{
 .download-section .app-download-buttons .text{
         display: flex;
         flex-direction: column;
-        align-items: start;
+        /* align-items: start; */
+        text-align: left;
+        /* background-color: red; */
 }
 .download-section .app-download-buttons .text span:first-child{
         font-size: var(--fs-small);
+        padding-right: 0.75rem;
 }
 .download-section .app-download-buttons .text span:last-child{
         font-size: var(--fs-lrg);
-}
-.download-section .app-download-buttons a{
-        width: 12rem;
+    }
+    .download-section .app-download-buttons a{
+        /* width: 12rem; */
         display: flex;
         padding: .3rem .6rem;
         align-items: center;
         gap: .76rem;
         border: 1px solid var(--gray);
-        color: var(--default-clr);
         background-color: var(--pry-clr);
-        border-radius: 7px;
+        border-radius: 8px;
 }
 
 .download-section .rating-section {
@@ -67,6 +72,7 @@ body{
         justify-content: center;
         gap: 10px;
         /* background-color: red; */
+        margin-bottom: 2rem;
     }
     
 .download-section    .rating-summary {
@@ -81,6 +87,7 @@ body{
  .download-section   .rating-stars {
         display: flex;
         align-items: center;
+        /* font-style: 18px; */
         /* background-color: aquamarine; */
     }
     
@@ -148,7 +155,11 @@ body{
                 /* width: 100px; */
             z-index: 3;
             animation: fade-in-up 1s ease forwards;
+
         }
+    .screen-one .imgContainer-c{
+        width: 200px;
+    }
 
     .screen-two {
             z-index: 2;
@@ -165,6 +176,7 @@ body{
 
     .iphone-screen .imgContainer{
                 position: relative;
+                width: 150px;
         }
     .iphone-screen .imgContent:not(.center-img) {
                 position: absolute; /* Overlay image is absolutely positioned */
@@ -173,6 +185,7 @@ body{
                 left: -25px;
                 bottom: 0px;
                 width: 200px; /* Ensures it covers the entire screen */
+                height: 285px;
                 /* height: auto; */
                 
                 pointer-events: none; /* Optional: ensures clicks pass through to underlying elements */
@@ -183,13 +196,17 @@ body{
             right: 0;
             left: -100px;
             bottom: 0;
-            width: 400px;   
+            width: 400px; 
+            height: 385px;  
         }
     
 .vector-bg{
             z-index: 100;
             position: absolute;
         }
+.vector-bg .v-img{
+    height: 400px;
+}
     .v-one{
             align-self: end;
             left: 0;
@@ -202,21 +219,25 @@ body{
         }
 
 /* section: account management tabs */
+.account-management-section{
+    /* background-color: red; */
+    padding: 1.9rem 3rem;
+}
 .tabs-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     background-color: var(--pry-clr-variant);
-    border-radius: .6rem;
-    /* background-color: #ef; */
-    margin: 1.9rem 3rem;
+    border-radius: 6px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .tab {
-    height: 100%;
+    width: 100%;
     background-color: var(--pry-clr);
     /* background-color: red; */
     display: flex;
+    align-items: center;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -224,42 +245,11 @@ body{
     padding: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    overflow: hidden;
 }
 
 .tab:hover {
     background-color: var(--pry-clr-variant);
     color: white;
-}
-.tabs-container a:nth-child(2):hover + a:nth-child(3)
-
-{
-    -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 -15px 10px #777;
-  /* -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg); */
-  transform: rotateX(-3deg);
-}
-.tabs-container a:nth-child(2):hover + a:nth-child(1){
-    -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 -15px 10px #777;
-  /* -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg); */
-  transform: rotateX(3deg);
-}
-.tabs-container a:nth-child(1):hover ~ a:nth-child(3){
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 15px 15px 10px #141313;
-}
-.tabs-container a:nth-child(3):hover ~ a:nth-child(2){
-  box-shadow: 0 15px 10px #777;
 }
 .tab:hover  h3{
     color: var(--sec-clr);
@@ -290,9 +280,6 @@ body{
 .tab-content h3,span {
     color: var(--gray);
     text-transform: uppercase;
-    /* margin: 0; */
-    /* font-size: 18px; */
-    /* font-weight: bold; */
 }
 .tab-content span{
     color: var(--sec-clr);
@@ -305,29 +292,33 @@ body{
     color: #666;
 }
 .Get-Started-section{
-    /* background-color: aqua; */
     position: relative;
+    height: 15rem;
+    display: flex;
     margin-bottom: 2rem;
-    overflow: hidden;
-    /* height: 30rem; */
+    /* background-color: tan; */
 }
 .payment-container{
     margin: 0 3rem;
-    margin-top: 8rem;
-    padding: 2rem 3.5rem;
-    background-color: var(--pry-clr);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     border-radius: .6rem;
-    /* display: flex; */
-    /* position: relative; */
+    background-color: blue;
+    align-self: end;
+    background-color: var(--pry-clr);
 }
-.detail-text{
+.payment-container .detail-text{
     width: 50%;
+    height: 100%;
+    align-self: end;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    padding-block: 2rem;
+    padding-left: 2rem;
+    background-color: var(--pry-clr);
+    border-radius: .6rem;
     gap: 1rem;
-    /* justify-content: center;align-items: center; */
-    /* background-color: red; */
 }
 .payment-container .detail-text h3{
     color: var(--default-clr);
@@ -340,32 +331,30 @@ body{
     /* font-size: var(--fs-larger); */
     color: var(--sec-clr);
 }
-.payment-container p{
+.payment-container .detail-text p{
     padding-right: 2rem;
 }
-.payment-container .payment-detail-image{
+.Get-Started-section .payment-detail-image{
+    /* height: 100%; */
     position: absolute;
-    height: 20rem;
-    right: 6rem;
-    bottom: 0;
-    margin-top: -5.2rem;
-}
-.payment-container .imgContainer{
-    position: relative;
-    /* background-color: red; */
-    bottom: -1.5rem;
-    right: 0;
-}
-.payment-container .imgContent{
-    position: absolute; /* Overlay image is absolutely positioned */
-    left: 1.6rem;
-    top: 1.6rem;
+    height: 15rem;
+    width: 10rem;
+    /* background-color: teal; */
+    display: flex;
+    z-index: 3;
+    right: 3rem;
     bottom: 0;
 }
+.Get-Started-section .payment-detail-image img{
+    height: 100%;
+    width: 100%;
+    align-self: end;
+}
+
 /* sign up container */
 .sign-up-section{
     /* background-color: red; */
-    margin: 3rem;
+    margin: 2rem 3rem;
 }
 .sign-up-container{
     background-color: var(--sec-clr);
@@ -381,6 +370,7 @@ body{
 .sign-up-container .image-illustration{
     position: relative;
     /* background-color: red; */
+    overflow: hidden;
     display: flex;
     align-content: flex-end;
     /* left: 4rem; */
@@ -449,37 +439,46 @@ body{
 }
 /* customer service */
 .chat-box-container{
+    /* width: 100%; */
     position: relative;
+    /* background-color: red; */
     background-color: var(--pry-clr);
     border-radius: .6rem;
-    margin: 2rem 3rem;
+    margin: 1rem 3rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
     overflow: hidden;
 }
 .chat-box-container .chat-box-text{
     width: 60%;
+    padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 3rem 2rem;
+    /* padding: 3rem 2rem; */
     text-transform: uppercase;
 }
 .chat-box-container .chat-icons{
     position: relative;
-    /* background-color: red; */
+    /* background-color: aqua; */
 }
 .chat-box-container .chat-icons .imgContent{
     position: absolute;
 }
+.chat-box-container .chat-icons img:first-child{
+    width: 320px;
+}
 .chat-box-container .chat-icons img:nth-child(2){
     /* background-color: aqua; */
     top: 1rem;left: 2rem;
+    width: 90px;
 }
 .chat-box-container .chat-icons img:nth-child(3){
     /* background-color: aqua; */
     top: 6rem;left: 12rem;
+    width: 100px;
 }
 .chat-box-container .chat-box-image-illustration{
     width: 40%;
@@ -487,6 +486,9 @@ body{
     justify-content: end;
     /* align-self: end; */
     /* background-color: red; */
+}
+.chat-box-container .chat-box-image-illustration img{
+    width: 400px;
 }
 .chat-box-container .v-three{
     z-index: 1000;
@@ -496,16 +498,24 @@ body{
 
 /* footer */
 footer{
+    /* background-color: red; */
     background-color: var(--pry-clr);
     padding: 2rem 3rem;
 }
 .footer-wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
-    padding: 0 4rem;
+    /* padding: 0 4rem; */
+    /* background-color: red; */
+}
+.footer-wrapper .footer-navigation{
+    padding: 0 2rem;
 }
 .footer-wrapper section{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     /* padding: 1rem 0 ; */

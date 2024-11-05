@@ -12,11 +12,17 @@
 </head>
 <body>
 
-        <header class="header-section">
+        <header class="header-section" id="navBar">
                 <div class="logo">
                         <a href="#">
                                 <img src="/assets/secure pay 2 (logo).svg" alt="Secure-pay Logo" srcset="">
                         </a>
+                </div>
+
+                <div class="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                 </div>
                 <nav class="navBar poppins-semibold">
                         <ul class="navList">
@@ -24,23 +30,29 @@
                                 <li><a href="#" class="navLink">Pricing</a></li>
                                 <li><a href="#" class="navLink">About</a></li>
                         </ul>
+                        
+                        <div class="navBtn">
+                                <a href="#" class="btn">Get the app</a>
+                        </div>
+                </nav>
+                <nav class="off-screen-navBar poppins-semibold">
+                        <ul class="navList">
+                                <li><a href="#" class="navLink">Product</a></li>
+                                <li><a href="#" class="navLink">Pricing</a></li>
+                                <li><a href="#" class="navLink">About</a></li>
+                        </ul>
+                        
+                        <div class="navBtn">
+                                <a href="#" class="btn">Get the app</a>
+                        </div>
                 </nav>
                 
-                <div class="navBtn">
-                        <a href="#" class="btn">Get the app</a>
-                </div>
-                <div class="nav-toggle">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                </div>
         </header>
 
         <section class="hero-page">
                 <section class="download-section">
                         <img src="/assets/hero-Curve.svg" class="curveImg" alt="" srcset="">
 
-                        
                         <div class="download-content">
                                 <h4 class="btn">
                                         <span>&#35;1</span>
@@ -48,19 +60,19 @@
                                 </h4>
 
                                 <div class="app-download-buttons btn">
-                                        <a href="#" class="appstore-button">
-                                        <img src="/assets/ic_outline-apple.svg" alt="App Store Icon" class="app-icon"  width="46px">
-                                        <div class="text">
-                                                <span class="poppins-light">Download on the</span>
-                                                <span class="poppins-medium"> App Store</span>
-                                        </div>
+                                        <a href="#" class="appStore-button">
+                                                <img src="/assets/ic_outline-apple.svg" alt="App Store Icon" class="a-app-icon"  width="46px">
+                                                <div class="text">
+                                                        <span class="poppins-light">Download on the</span>
+                                                        <span class="poppins-medium"> App Store</span>
+                                                </div>
                                         </a>
-                                        <a href="#" class="playstore-button btn">
-                                        <img src="/assets/logos_google-play-icon.svg" alt="Google Play Icon" class="app-icon" width="38px">
-                                        <div class="text">
-                                                <span class="poppins-light">GET IT ON</span>
-                                                <span class="poppins-medium"> Google Play</span>
-                                        </div>
+                                        <a href="#" class="playStore-button btn">
+                                                <img src="/assets/logos_google-play-icon.svg" alt="Google Play Icon" class="g-app-icon" width="38px">
+                                                <div class="text">
+                                                        <span class="poppins-light">GET IT ON</span>
+                                                        <span class="poppins-medium"> Google Play</span>
+                                                </div>
                                         </a>
                                 </div>
                                 
@@ -86,24 +98,26 @@
 
                 <section class="iphone-section">
                         <div class="vector-bg v-one">
-                                <img src="/assets/blueShape-l.svg" alt="" srcset="" height="400px">
+                                <img src="/assets/blueShape-l.svg" alt="" srcset="" class="v-img">
                         </div>
                         <div class="iphone-container">
                                 <div class="iphone-screen screen-one">
-                                        <img src="/assets/main-c.svg" alt="iPhone Screen 1" width="200px">
-                                        <img src="/assets/iPhone-ccc.svg" alt="" srcset="" class="imgContent center-img" height="385px">
+                                        <!-- frame -->
+                                        <img src="/assets/main-c.svg" alt="iPhone Screen 1" class="imgContainer-c"> 
+                                        <!-- content -->
+                                        <img src="/assets/iPhone-ccc.svg" alt="" srcset="" class="imgContent center-img">
                                 </div>
                                 <div class="iphone-screen screen-two">
-                                        <img src="/assets/main-l.svg" alt="iPhone Screen 2"width="150px" class="imgContainer">
-                                        <img src="/assets/iPhone-lc.svg" alt="" srcset="" class="imgContent" height="285px">
+                                        <img src="/assets/main-l.svg" alt="iPhone Screen 2" class="imgContainer">
+                                        <img src="/assets/iPhone-lc.svg" alt="" srcset="" class="imgContent">
                                 </div>
                                 <div class="iphone-screen screen-three">
-                                        <img src="/assets/main-r.svg" alt="iPhone Screen 3"width="150px">
-                                        <img src="/assets/iPhone-rc.svg" alt="" srcset="" class="imgContent" height="285px">
+                                        <img src="/assets/main-r.svg" alt="iPhone Screen 3" class="imgContainer">
+                                        <img src="/assets/iPhone-rc.svg" alt="" srcset="" class="imgContent">
                                 </div>
                         </div>
                         <div class="vector-bg v-two">
-                                <img src="/assets/blueShape-r.svg" alt="" srcset="" height="400px">
+                                <img src="/assets/blueShape-r.svg" alt="" srcset="" class="v-img">
                         </div>
                 </section>
         </section>
@@ -112,34 +126,34 @@
                 <section class="account-management-section">
                         <div class="tabs-container">
                                 <a class="tab" href="#">
-                                <div class="tab-icon">
-                                        <img src="/assets/openmoji_red-eye.svg" alt="Orders Icon">
-                                </div>
-                                <div class="tab-content">
-                                        <span>TRACK</span>
-                                        <h3>YOUR ORDERS</h3>
-                                        <p>Effectively track orders and delivery after making your order.</p>
-                                </div>
+                                        <div class="tab-icon">
+                                                <img src="/assets/openmoji_red-eye.svg" alt="Orders Icon">
+                                        </div>
+                                        <div class="tab-content">
+                                                <span>TRACK</span>
+                                                <h3>YOUR ORDERS</h3>
+                                                <p>Effectively track orders and delivery after making your order.</p>
+                                        </div>
                                 </a>
                                 <a class="tab" href="#">
-                                <div class="tab-icon">
-                                        <img src="/assets/token-branded_trust.svg" alt="Transactions Icon">
-                                </div>
-                                <div class="tab-content">
-                                        <span>safe &amp; reliable</span>
-                                        <h3>Transactions</h3>
-                                        <p>Enjoy advanced security with KYC authentication and real time fraud monitoring.</p>
-                                </div>
+                                        <div class="tab-icon">
+                                                <img src="/assets/token-branded_trust.svg" alt="Transactions Icon">
+                                        </div>
+                                        <div class="tab-content">
+                                                <span>safe &amp; reliable</span>
+                                                <h3>Transactions</h3>
+                                                <p>Enjoy advanced security with KYC authentication and real time fraud monitoring.</p>
+                                        </div>
                                 </a>
                                 <a class="tab" href="#">
-                                <div class="tab-icon">
-                                        <img src="/assets/emojione_locked.svg" alt="Payments Icon">
-                                </div>
-                                <div class="tab-content">
-                                        <span>secured</span>
-                                        <h3>Payments</h3>
-                                        <p>Comfortably make payments without fear of fraudulent activities here.</p>
-                                </div>
+                                        <div class="tab-icon">
+                                                <img src="/assets/emojione_locked.svg" alt="Payments Icon">
+                                        </div>
+                                        <div class="tab-content">
+                                                <span>secured</span>
+                                                <h3>Payments</h3>
+                                                <p>Comfortably make payments without fear of fraudulent activities here.</p>
+                                        </div>
                                 </a>
                         </div>
                         
@@ -148,15 +162,17 @@
                 <section class="Get-Started-section">
                         <div class="payment-container">
                                 <div class="detail-text">
-                                        <h3><p class="poppins-semibold">DISCOVER THE ADVANTAGE OF MAKING PAYMENTS WITH </p><span>SECUREPAY</span></h3>
+                                        <h3>
+                                                <p class="poppins-semibold">DISCOVER THE ADVANTAGE OF MAKING PAYMENTS WITH </p>
+                                                <span>SECUREPAY</span>
+                                        </h3>
                                         <div class="navBtn">
                                                 <a href="#" class="btn">Get started</a>
                                         </div>
                                 </div>
-                                <div class="payment-detail-image">
-                                        <img src="/assets/hand-frame.svg" alt="" class="imgContainer" srcset="" width="187px">
-                                        <img src="/assets/Free Hand Holding iPhone 12 Mini label.png" class="imgContent" alt="" srcset="" width="69px">
-                                </div>
+                        </div>
+                        <div class="payment-detail-image">
+                                <img src="/assets/hand-hold-iphone.svg" alt="" srcset="">
                         </div>
                 </section>
 
@@ -185,18 +201,19 @@
                                 </div>
                         </div>
                 </section>
+
                 <section class="customer-service-section">
                         <div class="chat-box-container">
                                 <div class="chat-box-text">
                                         <div class="chat-icons">
-                                                <img src="/assets/message-n-reply.svg" alt="" class="imgContainer" srcset="" width="320px">
-                                                <img src="/assets/carbon_user-profile.svg" alt="" srcset="" class="imgContent" width="90px">
-                                                <img src="/assets/bot-reply.svg" alt="" srcset="" class="imgContent" width="100px">
+                                                <img src="/assets/message-n-reply.svg" alt="" class="imgContainer" srcset="">
+                                                <img src="/assets/carbon_user-profile.svg" alt="" srcset="" class="imgContent">
+                                                <img src="/assets/bot-reply.svg" alt="" srcset="" class="imgContent">
                                         </div>
                                         <h3>24/7 Customer Service</h3>
                                 </div>
                                 <div class="chat-box-image-illustration">
-                                        <img src="/assets/iPhone-chatbox.svg" alt="" srcset="" width="400px">
+                                        <img src="/assets/iPhone-chatbox.svg" alt="" srcset="">
                                 </div>
                                 <div class="vector-bg v-three">
                                         <img src="/assets/bg-cs.svg" alt="" srcset="">
@@ -242,6 +259,7 @@
                                         </ul>
                                 </nav>
                         </section>
+
                         <section class="legal-section">
                                 <div class="footer-left">
                                         <div class="footer-social-media">
@@ -260,14 +278,11 @@
                                                </a>
                                         </div>
                                         <div class="footer-legal">
-                                                <a href="#">
-                                                        <h3>Privacy Policy</h3>
-                                                </a>
-                                                <a href="#">
-                                                        <h3>Terms &amp; Condition</h3>
-                                                </a>
+                                                <a href="#"><h3>Privacy Policy.</h3></a>
+                                                <a href="#"><h3>Terms &amp; Condition.</h3></a>
                                         </div>
                                 </div>
+
                                 <div class="footer-copyright">
                                         <a href="#">
                                                 <h3>@copyright 2024. All Rights Reserved</h3>
@@ -276,6 +291,8 @@
                         </section>
                 </div>
         </footer>
+
+        <script src="/script/landingPage.js"></script>
 </body>
 <template id="edit">
         <p>in the header what's the padding of the parent container</p>

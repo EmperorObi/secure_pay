@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6 {
     --default-clr: #000000;
     --default-clr-variant: #898888;
     --white: #FFFFFF;
-    --gray: #666;
+    --gray: #4a4949;
     --mode-dark: #000; 
     /*  */
    
@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5,h6 {
 
     /* custom fonts */
     --fs-medium: 16px;
-    --fs-lrg: 28px;
+    --fs-lrg: 24px;
     --fs-larger: 2.5vw;
     --fs-small: 12px;
  
@@ -65,30 +65,45 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Header */
 header{
+        position: fixed;
+        width: 100%;
         background-color: var(--pry-clr-variant);
+        /* backdrop-filter: blur(8px); */
         padding: 1.9rem 3rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-size: var(--fs-medium);
+        z-index: 2000;
         /* background-color: #ff2d17; */
+}
+#navBar{
+        transition: box-shadow 0.3s ease;
+}
+.navbar-shadow{
+        box-shadow: -10px 0 10px rgba(26, 26, 26, 0.1);
 }
 header .logo{
         width: 11.4rem;
+        flex-grow: 1.5;
         /* background-color: #ff2d17; */
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
 }
 header .logo img{
         width: 100%;
         /* align-self: end; */
 }
-header nav{
+header .navBar{
+        flex-grow: 1.5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         color: var(--sec-clr);
         /* background-color: #ff2d17; */
 }
-header nav .navList{
+header .navBar .navList{
         display: flex;
         gap: 3.4rem;
 }
@@ -108,5 +123,8 @@ header nav .navList{
 }
 /* Reference */
 .nav-toggle{
+        display: none;
+}
+.off-screen-navBar{
         display: none;
 }
