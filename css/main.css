@@ -111,7 +111,7 @@ header .navBar .navList{
         width: 7.4rem;
         display: flex;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         /* background-color: #ff2d17; */
 }
 .navBtn a{

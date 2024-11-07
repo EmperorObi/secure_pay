@@ -244,7 +244,7 @@ body{
     font-weight: 600;
     padding: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease, color 0.3s ease;
 }
 
 .tab:hover {
@@ -311,17 +311,19 @@ body{
 .payment-container .detail-text{
     width: 50%;
     height: 100%;
-    align-self: end;
+    /* align-self: end; */
     display: flex;
     flex-direction: column;
     padding-block: 2rem;
     padding-left: 2rem;
     background-color: var(--pry-clr);
+    /* background-color: indianred; */
     border-radius: .6rem;
     gap: 1rem;
 }
 .payment-container .detail-text h3{
     color: var(--default-clr);
+    /* background-color: tan; */
 }
 .detail-text h3{
     font-size: var(--fs-larger);

@@ -273,6 +273,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     /* background-color: var(--pry-clr); */
     /* background-color: red; */
   }
